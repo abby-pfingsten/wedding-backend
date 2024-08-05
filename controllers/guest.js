@@ -6,13 +6,11 @@ exports.getAllGuests = (req, res, next) => {
   //  Sauces in the database
   Guest.find()
     .then((guests) => {
-       
-       
-       
         res.status(200).json(guests);
         console.log(guests);
     })
-    .catch((error) => {
+      .catch((error) => {
+          console.log("error here", error);
       res.status(400).json({
         error: error,
       });
