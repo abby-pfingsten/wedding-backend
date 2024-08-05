@@ -1,16 +1,16 @@
-const Guest = require("../models/guest");
-
+const Guest = require('../models/guest');
 
 exports.getAllGuests = (req, res, next) => {
   // find method returns an array containing all of the
   //  Sauces in the database
   Guest.find()
     .then((guests) => {
-        res.status(200).json(guests);
-        console.log(guests);
+      console.log('HEREREARASDF');
+      res.status(200).json(guests);
+      console.log(guests);
     })
-      .catch((error) => {
-          console.log("error here", error);
+    .catch((error) => {
+      console.log('error here', error);
       res.status(400).json({
         error: error,
       });
