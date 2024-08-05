@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "format": "prettier --write \"ab-anj-wedding-backend/**.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,7 @@
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "mongoose": "^8.5.2",
+    "mongoose-mongodb-errors": "^0.0.2",
     "prettier": "^3.3.3"
   }
 }
