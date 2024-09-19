@@ -3,6 +3,7 @@ const Guest = require('../models/guest');
 exports.getAllGuests = (req, res, next) => {
   // find method returns an array containing all of the
   //  Sauces in the database
+  console.log(Guest);
   Guest.find()
     .then((guests) => {
       console.log('HEREREARASDF');

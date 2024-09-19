@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const guestSchema = new mongoose.Schema({
+const guestTable = new mongoose.Schema({
   guestID: { type: String, required: true },
   groupID: { type: String },
   name: { type: String, required: true },
@@ -8,4 +8,4 @@ const guestSchema = new mongoose.Schema({
   plusOne: { type: Boolean, required: true },
 });
 
-module.exports = mongoose.model('Guest', guestSchema);
+module.exports = mongoose.model('Guest', guestTable);
